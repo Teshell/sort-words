@@ -17,7 +17,7 @@ btn_sort.addEventListener("click", () => {
     lengths_converted.sort().forEach((leng) => {
       const number_element = document.createElement("h2");
 
-      number_element.innerHTML = `Words with ${leng} letters:`;
+      number_element.innerHTML = `Word(s) with ${leng} letters:`;
 
       words_list_element.appendChild(number_element);
 
