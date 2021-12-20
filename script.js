@@ -3,7 +3,7 @@ const words_list_element = document.querySelector(".words-list");
 
 btn_sort.addEventListener("click", () => {
   const words = document.querySelector("textarea").value;
-  const array_words = words.split(/[\n,]+/);
+  const array_words = words.split(/[\n\s,]+/);
 
   const lengths = array_words.map((word) => {
     return word.length;
@@ -17,7 +17,9 @@ btn_sort.addEventListener("click", () => {
     lengths_converted.sort().forEach((leng) => {
       const number_element = document.createElement("h2");
 
-      number_element.innerHTML = `Word(s) with ${leng} letters:`;
+      if (leng !== 0) {
+        number_element.innerHTML = `Word(s) with ${leng} letters:`;
+      }
 
       words_list_element.appendChild(number_element);
 
