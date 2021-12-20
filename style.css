@@ -1,5 +1,8 @@
-html {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html,
+* {
+  font-family: Poppins, sans-serif;
   color: #fff;
 }
 
@@ -25,6 +28,7 @@ body {
 .input-area {
   border-radius: 10px;
   box-shadow: 0 0 3px #fff;
+  font-size: 1em;
   padding: 15px;
   color: #fff;
   background: #161b22;
